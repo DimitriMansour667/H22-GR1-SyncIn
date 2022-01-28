@@ -2,7 +2,7 @@
 **SyncIn** est un assistant gratuit qui permet d'optimiser ses préférences musicales.
 
 ## Navigation :
-- Équipe
+- [Equipe](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
 -
 -
 -
