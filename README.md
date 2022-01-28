@@ -5,8 +5,8 @@
 ##
 
 ### Navigation :
-- ###### [Équipe](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
-- ###### [Historique](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
+- ###### [Équipe](https://github.com/LesGrailleurs/H22-GR1-SyncIn/blob/main/README.md#%C3%A9quipe-)
+- ###### [Historique](https://github.com/LesGrailleurs/H22-GR1-SyncIn/blob/main/README.md#historique-)
 - ###### [](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
 - ###### [Documentation](https://github.com/LesGrailleurs/H22-GR1-SyncIn/blob/main/README.md#documentation-)
 
