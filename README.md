@@ -8,7 +8,7 @@
 - ###### [Équipe](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
 - ###### [](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
 - ###### [](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
-- ###### [](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
+- ###### [Documentation](https://github.com/LesGrailleurs/H22-GR1-SyncIn#%C3%A9quipe-)
 
 ##
 
