@@ -1,4 +1,4 @@
-# H22-GR1-SyncIn
+# SyncIn
 ### À Propos :
 ###### [SyncIn](https://github.com/LesGrailleurs/H22-GR1-SyncIn) est un assistant gratuit qui permet d'optimiser ses préférences musicales.
 
