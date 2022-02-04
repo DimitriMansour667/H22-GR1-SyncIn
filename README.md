@@ -22,7 +22,8 @@
 ### Historique :
 
 ```
-web design
+[2022-02-04]
+Début de la création de l'interface de l'utilisateur du site web
 ```
 
 ##
