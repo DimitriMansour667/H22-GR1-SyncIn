@@ -29,4 +29,9 @@
 ##
 
 ### Documentation :
-
+```
+SyncIn est un site web développé par Maxime Gaudreau, Dimitri Mansour et Elias Senoune. L'idée générale du site web est d'apporter une optimisation musicale aux utilisateurs.
+Fonction et explication :
+ - Rechercher n'importe quelle musique disponible sur la platforme youtube et spotify (possible grâce à l'utilisation du API youtube et celui de spotify) (possibilité de recherche à l'aide de lien aussi pour des recherches plus spécifique)
+ 
+```
