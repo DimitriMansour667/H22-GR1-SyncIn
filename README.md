@@ -12,7 +12,7 @@
 
 ##
 
-### Équipe :
+### Développeurs :
 - ###### [Dimitri Mansour](https://github.com/LesGrailleurs)
 - ###### [Maxime Gaudreau](https://github.com/LeFamil99)
 - ###### [Elias Senoune](https://github.com/liyan19)
