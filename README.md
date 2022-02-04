@@ -22,7 +22,7 @@
 ### Historique :
 
 ```
-[2022-02-04] version 0.0.1 :
+[2022-02-04] version 0.0.1d :
 - Début de la création de l'interface de l'utilisateur du site web
 ```
 
