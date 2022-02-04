@@ -1,6 +1,6 @@
 # SyncIn
 ![écouteur](https://arabinene.com/10416-medium_default/ecouteurs-lenovo-livepods-lp3s-sans-fil-double-mains-libres-bluetooth-50-tactile-300-mah-avec-reduction-du-bruit-noir.jpg)
-############ Image à changer
+###### Image à changer
 ### À Propos :
 ###### [SyncIn](https://github.com/LesGrailleurs/H22-GR1-SyncIn) est un assistant gratuit qui permet d'optimiser ses préférences musicales.
 
