@@ -36,5 +36,7 @@
 ###### Fonction et explication :
 ###### - Rechercher n'importe quelle musique disponible sur la platforme youtube et spotify (possible grâce à l'utilisation du API youtube et celui de spotify) (possibilité de recherche à l'aide de lien aussi pour des recherches plus spécifiques)
 ###### - Diffusé la musique recherchée sur le site web à l'aide d'une intégration de son lien youtube ou spotify (algorythme qui copie le lien de la recherche)
-###### - 
+###### - Accès aux paroles des chansons recherchées (API de google)
+###### - Accès à la page wikipedia de l'artiste (API de wikipedia)
+###### - Télécharger les chansons (à revoir due à la légalité de la situation) 
 ######  (Toutes les fonctions ne sont pas garanties lors de la réalisation du projet)
