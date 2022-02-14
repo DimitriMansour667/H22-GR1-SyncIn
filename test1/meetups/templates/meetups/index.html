@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="{% static 'meetups/styles/all-meetups.css' %}">
 </head>
 <body>
-    <header>
-        <nav><a href="/meetups">DjangoMeetups</a></nav>
+    <header id="main-header">
+        <nav><a href="/meetups" id="main-logo">DjangoMeetups</a></nav>
         <h1>We got great meetups coming up</h1>
         <p>Find the one that best suits your needs</p>
     </header>
@@ -22,7 +22,7 @@
                 {% for meetup_item in meetups %}
                     <li class="meetup-item">
                         <article>
-                            <div class="meetups-summary">
+                            <div class="meetup-summary">
                                 <div class="meetup-image">
                                     <img src="" alt="">
                                 </div>

@@ -11,3 +11,6 @@ def index(request):
         "show_meetups": True,
         "meetups": meetups
     })
+
+def meetup_details(request):
+    return render()
