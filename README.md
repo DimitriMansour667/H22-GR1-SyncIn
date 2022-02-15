@@ -23,6 +23,14 @@
 ### Historique :
 
 ```
+[2022-02-14] version 0.1.1b :
+- Début du scripte youtube
+- Début du scripte wikipidia
+- Début du framework django
+- Retravaillage du html
+```
+
+```
 [2022-02-04] version 0.0.1d :
 - Début de la création de l'interface de l'utilisateur du site web
 - Développement du readme.md
