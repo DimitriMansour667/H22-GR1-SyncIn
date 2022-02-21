@@ -35,6 +35,6 @@ res = requests.get(url=searchUrl, headers=headers)
 resd = json.dumps(res.json(), indent=2)
 
 print(resd)
-for i in range(length):
+for i in range(min(length, len(res.json()["tracks"]["items"]))):
     print(res.json()["tracks"]["items"][i]["external_urls"]["spotify"])
 
