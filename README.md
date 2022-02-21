@@ -3,6 +3,7 @@
 ###### Image à changer
 ### À Propos :
 ###### [SyncIn](https://github.com/LesGrailleurs/H22-GR1-SyncIn) est un assistant gratuit qui permet d'optimiser ses préférences musicales.
+###### [elias hammache](https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/219754083_1579991059003886_126154138833348961_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=_-8RO6qmujkAX-0IHHW&_nc_ht=scontent-lga3-2.xx&oh=00_AT9NnJkwMdqCWDO3MG9o0rCSN_bM43a93KQX-KAMs-56tg&oe=620F2911)
 
 ##
 
@@ -21,6 +22,14 @@
 ##
 
 ### Historique :
+
+```
+[2022-02-14] version 0.1.1b :
+- Début du scripte youtube
+- Début du scripte wikipidia
+- Début du framework django
+- Retravaillage du html
+```
 
 ```
 [2022-02-04] version 0.0.1d :
