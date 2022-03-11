@@ -15,34 +15,45 @@
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="/">Logo</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="/">ACCUEIL</a></li>
-              <li class="active"><a href="/search">RECHERCHE</a></li>
-              <li><a href="/about">À PROPOS</a></li>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">USER
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">SIGN IN</a></li>
-                  <li><a href="#">SIGN UP</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="/">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">ACCUEIL</a></li>
+          <li class="active"><a href="/search">RECHERCHE</a></li>
+          <li><a href="/about">À PROPOS</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">USER
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">SIGN IN</a></li>
+              <li><a href="#">SIGN UP</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>
-
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="searchBar">
+    <div class="input-group">
+      <div class="form-outline">
+        <input type="search" id="form1" class="form-control" />
+        <label class="form-label" for="form1">Search</label>
+      </div>
+      <button type="button" class="btn btn-primary">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+    
 
 </body>
 </html>
