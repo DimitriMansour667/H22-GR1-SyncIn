@@ -1,15 +1,21 @@
 import urllib.request
 import wikipediaapi
- 
+import wikipedia
+
+artist= input("Quel artiste souhaites tu chercher ")
+#print(wikipedia.summary(artist))
+print(wikipedia.page(artist).content)
+
+"""
 wiki_wiki = wikipediaapi.Wikipedia('fr')
 page_py=wiki_wiki.page('Kanye_West')
 
 print("Page - Title: %s" % page_py.title)
  
 
-print("Page - Summary: %s" % page_py.summary[0:1000].split("\n")[1])
+print("Page - Summary: %s" % page_py.summary[0:10000].split("\n")[0])
    
-
+"""
 
 
 #ArtistName = "Kanye West"
