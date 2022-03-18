@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./foundation.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box {
+            background-color: rgb(136, 59, 59);
+            transition: background-color ease-out 200ms
+        }
+
+        .box:hover {
+            background-color: #fff
+        }
+
+        .box-upgrade {
+            background-color: rgb(136, 59, 59);
+            position: relative;
+            height: 100%;
+        }
+
+        .box-upgrade[data-tool-tip]::after {
+            content: attr(data-tool-tip);
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% - 34px);
+            height: calc(100% - 34px);
+            left: 17px;
+            top: 17px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            opacity: 0;
+            transition: opacity ease-out 200ms;
+        }
+
+        .box-upgrade[data-tool-tip]:hover::after {
+            opacity: 1;
+        }
+
+        body, html {
+            overflow: hidden;
+            margin: 1rem;
+        }
+
+        @keyframes example {
+            from {background-color:rgb(136, 59, 59)}
+            to {background-color: #fff}
+        }
+
+        @keyframes example-reverse {
+            from {background-color: #fff}
+            to {background-color: rgb(136, 59, 59)}
+        }
+
+        
+    </style>
+    <div class="grid-container">
+        <div class="grid-y grid-margin-y grid-frame">
+            <div class="cell auto">
+                <div class="grid-x grid-margin-x" style="height:100%;">
+                    <div class="cell small-4">
+                        <div class="box-upgrade" data-tool-tip="VLADDD"></div>
+                    </div>
+                    <div class="cell small-8">
+                        <div class="grid-y grid-margin-y grid-frame">
+                            <div class="cell small-6 box-upgrade" data-tool-tip="Vlad encore mieux">
+                            </div>
+                            <div class="cell small-6 box-upgrade" data-tool-tip="Vlad encore meilleur">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cell auto">
+                <div class="grid-x grid-margin-x" style="height:100%;">
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                    <div class="cell small-1 box">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

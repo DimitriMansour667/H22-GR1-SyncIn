@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./foundation.css">
+    <title>SyncIn</title>
+</head>
+<body class="b-black">
+    <style>
+        /*body, html {
+            margin: 2rem;
+            height: 400%; 
+            align-items: center;
+            text-align: center;
+        }
+
+        p {
+            text-align: left;
+            display: inline-block;
+            position: fixed;
+            font-size: 10rem;
+            animation: rotate 1s linear infinite;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -10s);
+            width: 20rem;
+        }
+
+        @keyframes rotate {
+            to {transform: rotate(360deg);}
+        }*/
+
+        body, html {
+            margin: .5rem;
+            height: 1000%;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            letter-spacing: .15rem;
+            font-size: 3rem;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .white {
+            color: white;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .green {
+            color: #00E13C;
+        }
+
+        .b-white {
+            background-color: white;
+        }
+
+        .b-black {
+            background-color: black;
+        }
+
+        .b-green {
+            background-color: #00E13C;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .title {
+            margin: 1rem;
+            text-align: center;
+            display: flex;
+        }
+
+        .fixed {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .sticky {
+            position: sticky;
+            left: 50%;
+            top: 0;
+        }
+
+        .right {
+            text-align: left;
+            display: inline-block;
+            margin-left: .7rem;
+        }
+
+        .left {
+            text-align: right;
+            display: inline-block;
+            margin-right: .7rem;
+        }
+
+        .x-out.left {
+            animation: translate-left 6s linear 1;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -2ms)
+        }
+
+        @keyframes translate-left {
+            to {transform: translateX(-100rem);
+            opacity: 0;}
+        }
+
+        .x-out.right {
+            animation: translate-right 6s linear 1;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -2ms)
+        }
+
+        @keyframes translate-right {
+            to {transform: translateX(100rem);
+            opacity: 0;}
+        }
+
+        .logo-img {
+            transform: translateY(50%);
+            animation: logo 60s linear 1;
+            animation-play-state: paused;
+            animation-delay: calc(var(--scroll) * -2ms)
+        }
+
+        @keyframes logo {
+            8.33% {
+                width: 300px;
+            }
+            91.67% {
+                width: 300px;
+            }
+            100% {
+                width: 300px;
+            }
+
+        }
+
+        
+    </style>
+    
+        <div class="page">
+            <div class="intro">
+                <div class="fixed">
+                    <div class="title" id="title">
+                        <h1 class="x-out left white">SYNC</h1>
+                        <h1 class="x-out right green">IN</h1>
+                    </div>
+                </div>
+                <div class="sticky">
+                    <div class="logo" id="logo">
+                        <img src="https://www.freepnglogos.com/uploads/spotify-logo-png/spotify-download-logo-30.png" alt="SyncIn logo" width="600px;" class="logo-img">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+    <script>
+        const title = document.getElementById("title");
+        const logo = document.getElementById("logo");
+
+        window.addEventListener("scroll", e => {
+            document.body.style.setProperty("--scroll", window.pageYOffset /*/ (document.body.offsetHeight - window.innerHeight)*/);
+
+            if(window.pageYOffset > 1300) { 
+                title.classList.add("hidden");
+            } else title.classList.remove("hidden");
+
+            if(window.pageYOffset > 29691) { 
+                logo.classList.add("hidden");
+            } else logo.classList.remove("hidden");
+        }, false);
+
+        
+        
+
+    </script>
+</body>
+</html>
