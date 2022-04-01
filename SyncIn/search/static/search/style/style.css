@@ -306,6 +306,121 @@ svg {
     margin-bottom: 4rem;
 }
 
+.search-container {
+  margin-top: 40vh;
+  min-height: 15vh;
+}
+
+.search-container.smaller {
+  margin-top: 100px;
+}
+
+.search-container form {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-container.smaller form {
+  display: flex;
+}
+
+.search-container form .search-input {
+  font-size: 6.5rem;
+  min-height: 8rem;
+  background-color: black;
+  border: 0;
+  border: 3px solid rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.08s ease-out;
+  -moz-transition: all 0.08s ease-out;
+  -o-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+
+.search-container form .search-input:focus {
+  outline: none;
+  border: 3px solid rgba(0, 225, 60, 1);
+  color: #00E13C;
+  border-radius: 10px;
+}
+
+.search-container form .submit-container {
+  width: 20rem;
+  height: 6rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.search-container.smaller form .submit-container {
+  margin: auto;
+  margin-left: 3rem;
+}
+
+.search-container form .submit-container::after {
+  content: "";
+  background-color:rgba(255, 255, 255, 1);
+  width: 0;
+  height: 4px;
+  display: block;
+  -webkit-transition: all 0.08s ease-out;
+  -moz-transition: all 0.08s ease-out;
+  -o-transition: all 0.08s ease-out;
+  transition: all 0.08s ease-out;
+}
+
+.search-container form .submit-container:hover::after {
+  background-color:#00E13C;
+  width: 100%;
+}
+
+.search-container.smaller form .submit-container:hover::after {
+  background-color:#00E13C;
+  width: 0;
+}
+
+.search-container form .search-button {
+  width: 100%;
+  height: 100%;
+  font-size: 3.5rem;
+  color:rgba(255, 255, 255, 1);
+  background-color: black;
+  border: 0;
+}
+
+.search-container form .search-button:hover {
+  color: rgba(0, 225, 60, 1);
+}
+
+::placeholder {
+  color: #00E13C;
+  opacity: 0; 
+}
+
+:-ms-input-placeholder { 
+  color: #00E13C;
+}
+
+::-ms-input-placeholder { 
+  color: #00E13C;
+}
+
+.results-container {
+  margin-top: 4rem;
+}
+
+.results-container .result-container .img {
+  text-align: right;
+}
+
+.results-container .result-container .text {
+  height: 120px;
+}
+
+
+
 
 /*@keyframes dash {
     from {

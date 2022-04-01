@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def search (response): 
     return render(response, "search/index.html", {})
+
+def results (response): 
+    return render(response, "results/index.html", {})
