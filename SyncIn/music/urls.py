@@ -3,8 +3,7 @@ from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path("", views.search, name="search"),
-    path("<query>", views.results, name="results"),
+    path("<slug:music_slug>", views.musics, name="music"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
