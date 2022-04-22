@@ -31,12 +31,12 @@
                 <a href="{% url 'music' result.slug %}">
                     <div class="grid-x grid-margin-x">
                         <div class="cell medium-3 img">
-                            <img src="http://via.placeholder.com/120" alt="Blob">
+                            <img src="{{result.cover_url}}" alt="Blob">
                         </div>
                         <div class="cell medium-auto">
                             <div class="grid-y text">
                                 <div class="cell small-6">Name: {{ result.title }}</div>
-                                <div class="cell small-6">Name: {{ result.artist }}</div>
+                                <div class="cell small-6">Artist: {{ result.artist }}</div>
                             </div>
                         </div>
                     </div>

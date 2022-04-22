@@ -35,8 +35,7 @@ def setUp():
     return token
 
 
-def getID(query): 
-    token = setUp()
+def getID(query, token): 
     
     length = 10
 
@@ -52,11 +51,31 @@ def getID(query):
     #print(resd)
     A = []
     for i in range(min(length, len(res.json()["tracks"]["items"]))):
-        A.append(res.json()["tracks"]["items"][i]["id"])
+        parsed = res.json()
+        A.append({
+            "title": parsed["tracks"]["items"][i]["name"],
+            "artist": parsed["tracks"]["items"][i]["artists"][0]["name"],
+            "cover_url": getImage(parsed["tracks"]["items"][i]["album"]["id"], token),
+            "slug": parsed["tracks"]["items"][i]["id"],
+        })
     return A
 
-def getName(id):
-    token = setUp()
+
+def getImage(albumID, token):
+    
+    searchUrl = f"https://api.spotify.com/v1/albums/{albumID}"
+    headers = {
+        "Authorization": "Bearer " + token
+    }
+
+    res = requests.get(url=searchUrl, headers=headers)
+
+    resd = json.dumps(res.json(), indent=2)
+
+    print(resd)
+    return res.json()["images"][0]["url"]
+
+def getName(id, token):
     
     length = 10
 
@@ -69,18 +88,21 @@ def getName(id):
 
     resd = json.dumps(res.json(), indent=2)
     
-    print(resd)
     return res.json()["name"]
 
 
 
-def results (response, query): 
-    print(query)
+def results (response): 
+    #print(query)
+    query = None
 
-    list = getID(query)
+    #if response.method == "GET":
+    query = response.GET.get("vlad")
+    
 
-    obj = {"title": getName(list[0]), "artist": "Aurora", "slug": list[0]}
-    obj2 = {"title": getName(list[1]), "artist": "Kanye West", "slug": list[1]}
-    return render(response, "results/index.html", {"results": [
-        obj, obj2
-    ]})
+
+    token = setUp()
+
+    objs = getID(query, token)
+
+    return render(response, "results/index.html", {"query": query, "results": objs})

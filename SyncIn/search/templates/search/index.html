@@ -84,10 +84,10 @@
             <div class="grid-container">
                 <div class="grid-x">
                     <div class="cell small-12">
-                        <form>
-                            <input type="text" id="vlad" class="search-input" placeholder="Recherchez une musique ..." autocomplete="off">
+                        <form  method="get" action="{% url 'result' %}">
+                            <input type="text" name="vlad" id="vlad" class="search-input" placeholder="Recherchez une musique ..." autocomplete="off">
                             <div class="submit-container">
-                                <input type="submit" value="Rechercher" class="search-button" href="../results">
+                                <button type="submit" class="search-button" id="submit">Rechercher</button>
                             </div>
                             
                         </form>
@@ -100,7 +100,7 @@
         
 
         <script src="{% static 'search/anim/countUp.js' %}"></script>
-        <script src="{% static 'search/anim/app.js' %}"></script>
+        <script src="{% static 'search/anim/submit.js' %}"></script>
     </body>
     
 </html>
