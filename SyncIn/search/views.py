@@ -72,7 +72,6 @@ def getImage(albumID, token):
 
     resd = json.dumps(res.json(), indent=2)
 
-    print(resd)
     return res.json()["images"][0]["url"]
 
 def getName(id, token):
