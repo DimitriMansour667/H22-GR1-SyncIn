@@ -75,20 +75,20 @@ def getImage(albumID, token):
     print(resd)
     return res.json()["images"][0]["url"]
 
-def getName(id, token):
+# def getName(id, token):
     
-    length = 10
+#     length = 10
 
-    searchUrl = f"https://api.spotify.com/v1/tracks/{id}"
-    headers = {
-        "Authorization": "Bearer " + token
-    }
+#     searchUrl = f"https://api.spotify.com/v1/tracks/{id}"
+#     headers = {
+#         "Authorization": "Bearer " + token
+#     }
 
-    res = requests.get(url=searchUrl, headers=headers)
+#     res = requests.get(url=searchUrl, headers=headers)
 
-    resd = json.dumps(res.json(), indent=2)
+#     resd = json.dumps(res.json(), indent=2)
     
-    return res.json()["name"]
+#     return res.json()["name"]
 
 
 

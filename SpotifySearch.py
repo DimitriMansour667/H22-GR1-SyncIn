@@ -125,7 +125,7 @@ def getMainArtist(id):
     print(resd)
     return res.json()["artists"][0]["name"]
 
-print(getImage(getAlbumID(getID("runaway")[0])))
+#print(getImage(getAlbumID(getID("runaway")[0])))
 #print(getImage(getAlbumID(getID("hotel california")[0])))
-print(setUp())
-print(getAlbumID(getID("runaway")[0]))
+#print(setUp())
+print(getName(getID("runaway")[0]))

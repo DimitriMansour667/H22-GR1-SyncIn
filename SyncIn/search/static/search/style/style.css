@@ -411,22 +411,46 @@ svg {
   margin-top: 4rem;
 }
 
-.results-container .result-container .img {
+.results-container .img {
   text-align: right;
+  width: 250px;
 }
 
-.results-container .result-container .text {
-  height: 120px;
+.results-container .text {
+  height: 100%;
+  color: #fff;
+}
+
+.results-container p {
+    font-size: 3rem;
+    margin: 10px 0 10px;
+}
+
+.grid-container-2 {
+    max-width: 70%;
+    margin: 0 auto 0 auto
+}
+
+.music-container {
+    margin-top: 120px;
+    color: #fff;
+}
+
+.green {
+    color:rgba(0, 225, 60, 1)
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 6rem;
+}
+
+.title h2 {
+    text-align: left;
+    font-size: 4rem;
 }
 
 
-
-
-/*@keyframes dash {
-    from {
-        stroke-dashoffset: 1506;
-    }
-    to {
-        stroke-dashoffset: 0;
-    }
-}*/

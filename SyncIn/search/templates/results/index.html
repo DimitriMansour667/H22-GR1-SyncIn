@@ -8,13 +8,13 @@
 
 {% block body %}
 <div class="search-container smaller">
-    <div class="grid-container">
+    <div class="grid-container-2">
         <div class="grid-x">
             <div class="cell small-12">
-                <form>
-                    <input type="text" id="vlad" class="search-input" placeholder="Recherchez une musique ..." autocomplete="off">
+                <form  method="get" action="{% url 'result' %}">
+                    <input type="text" name="vlad" id="vlad" class="search-input" placeholder="Recherchez une musique ..." autocomplete="off">
                     <div class="submit-container">
-                        <input type="submit" value="Rechercher" class="search-button">
+                        <button type="submit" class="search-button" id="submit">Rechercher</button>
                     </div>
                     
                 </form>
@@ -24,7 +24,7 @@
 </div>
 
 <div class="results-container">
-    <div class="grid-container">
+    <div class="grid-container-2">
         <div class="grid-y grid-margin-y">
         {% for result in results %}
             <div class="cell small-12 result-container">
@@ -35,8 +35,8 @@
                         </div>
                         <div class="cell medium-auto">
                             <div class="grid-y text">
-                                <div class="cell small-6">Name: {{ result.title }}</div>
-                                <div class="cell small-6">Artist: {{ result.artist }}</div>
+                                <div class="cell small-6 p"><p>Name: {{ result.title }}</p></div>
+                                <div class="cell small-6 p"><p>Artist: {{ result.artist }}</p></div>
                             </div>
                         </div>
                     </div>
