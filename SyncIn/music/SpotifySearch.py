@@ -1,7 +1,7 @@
 import requests
 import base64
 import json
-from secrets import *
+from music.secrets import *
 
 def setUp():
     # Step 1 - Authorization 
