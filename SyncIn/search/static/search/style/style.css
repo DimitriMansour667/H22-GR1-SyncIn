@@ -428,7 +428,8 @@ svg {
 
 .grid-container-2 {
     max-width: 70%;
-    margin: 0 auto 0 auto
+    margin: 0 auto 0 auto;
+    overflow: hidden;
 }
 
 .music-container {
@@ -452,5 +453,94 @@ svg {
     text-align: left;
     font-size: 4rem;
 }
+
+.main-author-container {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.author-img {
+    margin-right: 2rem;
+}
+
+.author-img img {
+    min-width: 220px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.other-author-img img {
+    min-height: 80px;
+    max-height: 120px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.other-author-description {
+    margin-left: 10%;
+}
+
+.author-container .in {
+    display: inline-block;
+}
+
+.other-authors-container .in {
+    pointer-events: none;
+}
+
+.main-author-container a {
+    font-size: 24px;
+}
+
+.main-author-container a :hover {
+    color:rgba(0, 225, 60, 0.8);
+}
+
+.other-author-description {
+    color:rgba(0, 225, 60, 1);
+}
+
+.other-authors-container .other-a {
+    height: 100%;
+    padding: 0.5rem;
+}
+
+.other-authors-container .other-a :hover {
+    
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 3.5rem;
+}
+
+.red {
+    color: red;
+}
+
+/* .info-grid {
+    min-height: 50rem;
+} */
+
+.lyrics-container {
+    max-height: 45rem;
+    overflow-y: scroll;
+}
+
+.info-container a {
+    font-size: 30px;
+}
+
+.info-container .links {
+    margin-top: 5rem;
+}
+
+.info-container p {
+    white-space: pre-wrap;
+}
+
+
 
 
