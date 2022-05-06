@@ -164,10 +164,13 @@ def getDesc(name):
     name = name.lower().title()
 
     formattedNames = ["_".join(name.split(" ")), name + "_(chanteur)", name + "_(chanteuse)"]
-
+    
     for i in range (len(formattedNames)):
+        if "Mc" in formattedNames[i]:
+            formattedNames[i] = "Mc".join([x.title() for x in formattedNames[i].split("Mc")])
+        #print(formattedNames[i])
         page_py=wiki_wiki.page(formattedNames[i])
-        if "musi" in page_py.summary[0:10000] or "DJ" in page_py.summary[0:10000] or "rap" in page_py.summary[0:10000] or "chant" in page_py.summary[0:10000]:
+        if "musi" in page_py.summary[0:10000] or "DJ" in page_py.summary[0:10000] or "rap" in page_py.summary[0:10000] or "chan" in page_py.summary[0:10000] or "auteur" in page_py.summary[0:10000]:
             return {"content": page_py.summary[0:300], "url": "https://fr.wikipedia.org/wiki/" + formattedNames[i], "found": True}
     
     return {"content": "Page Wikipédia inexistante", "url": "", "found": False}
