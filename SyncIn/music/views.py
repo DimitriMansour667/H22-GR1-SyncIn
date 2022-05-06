@@ -51,7 +51,7 @@ def getID(id, token):
 
     resd = json.dumps(res.json(), indent=2)
 
-    print(resd)
+    #print(resd)
     
     parsed = res.json()
 
@@ -74,7 +74,7 @@ def getID(id, token):
             "title": parsed["name"],
             "duration": durationO,
             "spotify": parsed["external_urls"]["spotify"],
-            "youtube": getYoutube(parsed["name"] + parsed["artists"][0]["name"]),
+            "youtube": getYoutube(parsed["name"] + " " + parsed["artists"][0]["name"]),
             "lyrics": getLyrics(parsed["name"].split("(")[0], parsed["artists"][0]["name"])
         },
         "album": getImage(parsed["album"]["id"], token),
@@ -119,10 +119,13 @@ def getArtist(ID, token):
 
     parsed = res.json()
     #print (parsed["images"][1]["url"])
+    image = ""
 
+    if len(parsed["images"]) > 0:
+        image = parsed["images"][1]["url"]
     o = {
         "name": parsed["name"], 
-        "image": parsed["images"][1]["url"],
+        "image": image,
         "description": getDesc(parsed["name"])
     }
 
@@ -134,9 +137,9 @@ def getLyrics(songName, artist):
     genius = lyricsgenius.Genius(key)
 
     song = genius.search_song(songName, artist)
-    #print(songName, artist)
-    #print(song.lyrics)
-    return song.lyrics
+    # print(songName, artist)
+    # print(song)
+    return song.lyrics if not song == None else "Paroles indisponibles"
 
 
 
@@ -175,7 +178,8 @@ def getDesc(name):
     
 
 def getYoutube(name): 
-    searchWordCleaned = name.replace(' ', '+')
+    searchWordCleaned = "".join([i for i in name if i.isalpha() or i.isspace()]).replace(' ', '+')
+    print(searchWordCleaned)
 
     html = urllib.request.urlopen("https://www.youtube.com/results?search_query="+searchWordCleaned)
     video_ids = re.findall(r"watch\?v=(\S{11})", html.read().decode())
