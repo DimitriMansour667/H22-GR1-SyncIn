@@ -443,6 +443,7 @@ svg {
 
 .title {
     text-align: center;
+    margin-top: 5rem;
 }
 
 .title h1 {
@@ -476,9 +477,9 @@ svg {
     border-radius: 3px;
 }
 
-.other-author-description {
+/* .other-author-description {
     margin-left: 10%;
-}
+} */
 
 .author-container .in {
     display: inline-block;
@@ -503,6 +504,8 @@ svg {
 .other-authors-container .other-a {
     height: 100%;
     padding: 0.5rem;
+    /* border: 2px solid black;
+    border-radius: 3px; */
 }
 
 .other-authors-container .other-a :hover {
@@ -529,7 +532,7 @@ svg {
     overflow-y: scroll;
 }
 
-.info-container a {
+a.link {
     font-size: 30px;
 }
 
@@ -552,6 +555,12 @@ svg {
 ::-webkit-scrollbar-thumb {
     background-color: white;
     outline: 1px solid slategrey;
+}
+h2.marginn {
+    margin-bottom: 4rem;
+}
+h2.no-marginn {
+    margin: 0;
 }
 
 
