@@ -9,6 +9,11 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+try:
+    from local_settings import *
+except ImportError:
+    pass
+
 
 from pathlib import Path
 
@@ -25,7 +30,10 @@ SECRET_KEY = 'django-insecure-t75+qmd#pkwu3i9ce+*!7e#z4_=kh_f_6ale83c^n&3vcp$wvg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://lit-cove-27214.herokuapp.com"]
+
+CSRF_TRUSTED_ORIGINS = ["https://lit-cove-27214.herokuapp.com"]
+
 
 
 # Application definition
@@ -39,8 +47,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "main",
     "search",
-    "music"
+    "music",
+    "login",
+    "favorites",
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -66,11 +77,17 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries':{
+            'tags': 'SyncIn.templatetags.tags',
+            },
         },
     },
 ]
 
 WSGI_APPLICATION = 'SyncIn.wsgi.application'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 
 
 # Database
@@ -78,6 +95,12 @@ WSGI_APPLICATION = 'SyncIn.wsgi.application'
 
 DATABASES = {
     'default': {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "syncin_db",
+        "USER": "foo",
+        "PASSWORD": "bar",
+        "HOST": "localhost",
+        "PORT": "5432",
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
@@ -124,3 +147,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+import django_heroku
+django_heroku.settings(locals())
+
+
+
+
