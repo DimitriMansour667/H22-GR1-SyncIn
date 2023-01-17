@@ -10,7 +10,7 @@ import lyricsgenius
 import time
 import random
 from login.models import Song, Album, Author, Profile, Fav
-
+#test
 # Identifiants pour se connecter à 'API de Spotify
 clientId = "5a3ae217ec7044f981b938869c691130"
 clientSecret = "efaf289a8333490bb4e335ca85a83347"
